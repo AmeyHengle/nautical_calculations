@@ -1,6 +1,6 @@
 from math import cos, sin, atan2, sqrt, radians, degrees, log, tan, pi
 
-
+#------------Function to calculate the nautical distance (in km) between two given coordinates----------------
 def get_distance(lat1, long1, lat2, long2):
     try:
         R = 6371000  # Radius of earth in metres
@@ -15,6 +15,7 @@ def get_distance(lat1, long1, lat2, long2):
     except Exception as e:
         return 'Exception: '+e
 
+#------------Function to calculate the bearing between two given coordinates----------------
 def get_bearing(lat1, long1, lat2, long2):
     try:
         startlat = radians(lat1)
