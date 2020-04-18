@@ -49,7 +49,7 @@ def get_point(lat, long, azimuth, distance):
     try:
         R = 6371  # Radius of the Earth in km
         bearing = radians(azimuth)  # Bearing is degrees converted to radians.
-        d = distance / 1000  # Distance m converted to km
+        d = distance # Distance in km
 
         lat1 = radians(lat)  # Current dd lat point converted to radians
         long1 = radians(long)  # Current dd long point converted to radians

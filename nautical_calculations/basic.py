@@ -3,7 +3,7 @@ from math import cos, sin, atan2, sqrt, radians, degrees, log, tan, pi
 #------------Function to calculate the nautical distance (in km) between two given coordinates----------------
 def calculate_distance(lat1, long1, lat2, long2):
     try:
-        R = 6371000  # Radius of earth in metres
+        R = 6371 # Radius of earth in metres
         lat1rads = radians(lat1)
         lat2rads = radians(lat2)
         deltalat = radians((lat2 - lat1))
