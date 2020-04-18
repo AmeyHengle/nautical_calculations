@@ -18,7 +18,7 @@ import nautical_calculations
 nautical_calculations.calculate_distance(lat1,long1,lat2,long2) # returns the nautical distance (in km) between two coordinates (lat1,long1) and (lat2,long2)
 
 ```
-![example1]()
+![example1](https://github.com/AmeyHengle/nautical_calculations.git/samples/distance.png)
 
 
 
