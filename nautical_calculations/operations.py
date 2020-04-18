@@ -65,4 +65,4 @@ def get_point(lat, long, azimuth, distance):
 
         return [lat2, long2]
     except Exception as e:
-        return 'Exception: '+e
+        return 'Exception: '+ e
