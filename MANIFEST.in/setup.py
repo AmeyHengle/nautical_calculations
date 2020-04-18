@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup,find_packages
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -14,7 +14,7 @@ setup(
     description="Get all the nautical calculations here. ",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/AmeyHengle/nautical_calculations",
     author="Amey Hengle",
     author_email="domainamey@gmail.com",
     license="MIT",
@@ -23,11 +23,12 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["nautical_calculations"],
+    packages= find_packages(),
     include_package_data=True,
     entry_points={
         "console_scripts": [
             "nautical_calculations = nautical_calculations.__main__:main",
         ]
     },
+    python_requires='>=3.6'
 )

@@ -1,20 +1,20 @@
 from math import cos, sin, atan2, radians, degrees, asin, modf
-from nautical_calculations.basic import get_bearing, get_distance
+from nautical_calculations.basic import calculate_bearing, calculate_distance
 
 
-# -------------------returns every coordinate pair in between two coordinate  pairs given the desired number-----------
+# -------------------returns a list containing all points in between the two specified coordinate pairs (lat-long) given the number value-----------
 
 def divide_by_number(lat1, long1, lat2, long2, num):
     try:
         num = num + 1
         coordinate_list = []
-        azimuth = get_bearing(lat1, long1, lat2, long2)
-        dist = get_distance(lat1, long1, lat2, long2)
+        azimuth = calculate_bearing(lat1, long1, lat2, long2)
+        dist = calculate_distance(lat1, long1, lat2, long2)
         dist = (dist / num)
         counter = float(dist)
         coordinate_list.append([lat1, long1])
         for distance in range(num - 1):
-            coord = calculate_point(lat1, long1, azimuth, counter)
+            coord = get_point(lat1, long1, azimuth, counter)
             counter = counter + float(dist)
             coordinate_list.append(coord)
         coordinate_list.append([lat2, long2])
@@ -23,18 +23,18 @@ def divide_by_number(lat1, long1, lat2, long2, num):
         return 'Exception: ' + e
 
 
-# --------------returns every coordinate pair in between two coordinate pairs given the desired interval---------
+# -------------------returns a list containing all points in between the two specified coordinate pairs (lat-long) given the interval value-----------
 
 def divide_by_interval(lat1, long1, lat2, long2, interval):
     try:
         coordinate_list = []
-        azimuth = get_bearing(lat1, long1, lat2, long2)
-        d = get_distance(lat1, long1, lat2, long2)
+        azimuth = calculate_bearing(lat1, long1, lat2, long2)
+        d = calculate_distance(lat1, long1, lat2, long2)
         remainder, dist = modf((d / interval))
         counter = float(interval)
         coordinate_list.append([lat1, long1])
         for distance in range(0, int(dist)):
-            coord = calculate_point(lat1, long1, azimuth, counter)
+            coord = get_point(lat1, long1, azimuth, counter)
             counter = counter + float(interval)
             coordinate_list.append(coord)
         coordinate_list.append([lat2, long2])
@@ -45,7 +45,7 @@ def divide_by_interval(lat1, long1, lat2, long2, interval):
 
 # ----------Returns the lat-long of destination point given the start lat, long, azimuth, and distance----------
 
-def calculate_point(lat, long, azimuth, distance):
+def get_point(lat, long, azimuth, distance):
     try:
         R = 6371  # Radius of the Earth in km
         bearing = radians(azimuth)  # Bearing is degrees converted to radians.
