@@ -38,7 +38,7 @@ nautical_calculations.get_point(lat,long,azimuth,distance) # returns the coordin
 
 nautical_calculations.divide_by_number(lat1, long1, lat2, long2, number) # returns a list containing all points in between the two specified coordinate pairs (lat-long) given the number value
 ```
-![example1]()
+![example](https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png)
 
 
 ```python
