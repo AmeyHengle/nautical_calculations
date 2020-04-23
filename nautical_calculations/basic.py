@@ -3,6 +3,7 @@ from math import cos, sin, atan2, sqrt, radians, degrees, log, tan, pi
 #------------Function to calculate the nautical distance (in km) between two given coordinates----------------
 def calculate_distance(lat1, long1, lat2, long2):
     try:
+        lat1 = float(lat1); long1 = float(long1);  lat2 = float(lat2); long2 = float(long2);
         R = 6371 # Radius of earth in metres
         lat1rads = radians(lat1)
         lat2rads = radians(lat2)
@@ -18,6 +19,7 @@ def calculate_distance(lat1, long1, lat2, long2):
 #------------Function to calculate the bearing between two given coordinates----------------
 def calculate_bearing(lat1, long1, lat2, long2):
     try:
+        lat1 = float(lat1); long1 = float(long1);  lat2 = float(lat2); long2 = float(long2);
         startlat = radians(lat1)
         startlong = radians(long1)
         endlat = radians(lat2)
