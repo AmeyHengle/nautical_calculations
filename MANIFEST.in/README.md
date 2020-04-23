@@ -10,7 +10,7 @@
 
 >The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
 
-<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300"/>
+<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300"/> <br> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300"/> 
 
 ## Installation
 
@@ -92,8 +92,8 @@ convert_to_degress(angle)              #converts angle in radians to degrees
 ```
 
 
-##Sample code link
-https://github.com/AmeyHengle/nautical_calculations/blob/master/nautical_calculations/sample_code.py
+## Sample code link
+https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/sample_code.py
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
