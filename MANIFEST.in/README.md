@@ -10,7 +10,7 @@
 
 >The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
 
-<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300"/> <br> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300"/> 
+<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300"/>  <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300"/> 
 
 ## Installation
 
