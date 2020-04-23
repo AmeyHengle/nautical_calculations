@@ -14,7 +14,7 @@ def calculate_distance(lat1, long1, lat2, long2):
         d = R * c
         return d
     except Exception as e:
-        return 'Exception: '+e
+        return 'Exception: '+ e
 
 #------------Function to calculate the bearing between two given coordinates----------------
 def calculate_bearing(lat1, long1, lat2, long2):
@@ -34,4 +34,4 @@ def calculate_bearing(lat1, long1, lat2, long2):
         bearing = (degrees(atan2(dlong, dPhi)) + 360.0) % 360.0;
         return bearing
     except Exception as e:
-        return 'Exception: '+e
+        return 'Exception: '+ e

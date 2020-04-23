@@ -3,7 +3,6 @@ from logging import log
 from nautical_calculations.basic import calculate_bearing,calculate_distance
 from nautical_calculations.operations import get_point, divide_by_interval, divide_by_number,get_midpoint
 
-
 def main():
     try:
         if len(sys.argv) > 1:
