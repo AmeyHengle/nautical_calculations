@@ -100,6 +100,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## References
+
+1) http://mathforum.org/library/drmath/view/51879.html
+2) http://www.edwilliams.org/avform.htm#Intermediate
+3) http://mathforum.org/library/drmath/view/55417.html
+4) http://mathforum.org/library/drmath/view/51822.html
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
 
