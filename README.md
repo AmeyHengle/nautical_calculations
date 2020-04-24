@@ -10,9 +10,9 @@
 
 >The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
 
-<img alt = 'Image' src ="C:/Users/Amey/PycharmProjects/nautical_calculations/samples/distance.png" /> <br> 
-
-<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/>       <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/>       <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
+<img alt = 'example1' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/>
+<img alt = 'example2' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/>
+<img alt = 'example3' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
 
 
 ## Installation
