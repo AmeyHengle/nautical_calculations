@@ -1,0 +1,3 @@
+[console_scripts]
+nautical_calculations = nautical_calculations.__main__:main
+
