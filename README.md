@@ -41,7 +41,7 @@ from nautical_calculations.operations import divide_by_interval
 
 from nautical_calculations.operations import divide_by_number
 ```
-##Usage examples:
+## Usage examples:
 
 I) Nautical distance (km)
 ```python
@@ -93,7 +93,7 @@ convert_to_radians(angle)              #converts angle in degrees to radians
 convert_to_degress(angle)              #converts angle in radians to degrees
 ```
 
-##Sample code link
+## Sample code link
 https://github.com/AmeyHengle/nautical_calculations/blob/master/nautical_calculations/sample_code.py
 
 
