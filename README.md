@@ -10,12 +10,10 @@
 
 >The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
 
-<<<<<<< HEAD
-<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
-=======
-<img alt = 'example1' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/>       <img alt = 'example2' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/>       <img alt = 'example3' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
->>>>>>> e7618dc58e93ecec3f59e36d7e14040df963347b
 
+<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
+
+<img alt = 'example1' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/>       <img alt = 'example2' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/>       <img alt = 'example3' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
 
 ## Installation
 
@@ -111,10 +109,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## References
-<<<<<<< HEAD
-=======
 
->>>>>>> e7618dc58e93ecec3f59e36d7e14040df963347b
 1) http://mathforum.org/library/drmath/view/51879.html
 2) http://www.edwilliams.org/avform.htm#Intermediate
 3) http://mathforum.org/library/drmath/view/55417.html
