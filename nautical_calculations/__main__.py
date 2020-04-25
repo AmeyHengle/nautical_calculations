@@ -1,6 +1,6 @@
 import sys
 from logging import log
-from nautical_calculations.basic import calculate_bearing,calculate_distance
+from nautical_calculations.basic import get_bearing,get_distance,rhumb_line
 from nautical_calculations.operations import get_point, divide_by_interval, divide_by_number,get_midpoint
 
 def main():
@@ -9,11 +9,11 @@ def main():
             arg = sys.argv[1]
             if arg == 1:
                 log('Nautical Distance')
-                result = calculate_distance(float(sys.argv[2]), float(sys.argv[3]),float( sys.argv[4]),float( sys.argv[5]))
+                result = get_distance(float(sys.argv[2]), float(sys.argv[3]),float( sys.argv[4]),float( sys.argv[5]))
                 print('Nautical Distance (km): ', result)
             elif arg == 2:
                 log('bearing')
-                result = calculate_bearing(float(sys.argv[2]), float(sys.argv[3]),float( sys.argv[4]),float( sys.argv[5]))
+                result = get_bearing(float(sys.argv[2]), float(sys.argv[3]),float( sys.argv[4]),float( sys.argv[5]))
                 print('Bearing: ', result)
             elif arg == 3:
                 log('get_point')
@@ -30,6 +30,10 @@ def main():
             elif arg == 6:
                 log('Midpoint')
                 result = get_midpoint(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
+                print('Resultant point: ', result)
+            elif arg == 7:
+                log('Rhumb Line')
+                result = rhumb_line(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
                 print('Resultant point: ', result)
 
         else:

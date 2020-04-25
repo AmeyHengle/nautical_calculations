@@ -1,5 +1,5 @@
 from math import cos, sin, atan2, radians, degrees, asin, modf
-from nautical_calculations.basic import calculate_bearing, calculate_distance
+from nautical_calculations.basic import get_bearing, get_distance
 
 
 # -------------------returns a list containing all points in between the two specified coordinate pairs (lat-long) given the number value-----------
@@ -9,8 +9,8 @@ def divide_by_number(lat1, long1, lat2, long2, num):
         lat1 = float(lat1); long1 = float(long1);  lat2 = float(lat2); long2 = float(long2);
         num = num + 1
         coordinate_list = []
-        azimuth = calculate_bearing(lat1, long1, lat2, long2)
-        dist = calculate_distance(lat1, long1, lat2, long2)
+        azimuth = get_bearing(lat1, long1, lat2, long2)
+        dist = get_distance(lat1, long1, lat2, long2)
         dist = (dist / num)
         counter = float(dist)
         coordinate_list.append([lat1, long1])
@@ -21,7 +21,7 @@ def divide_by_number(lat1, long1, lat2, long2, num):
         coordinate_list.append([lat2, long2])
         return coordinate_list
     except Exception as e:
-        return 'Exception: ' + e
+        return 'Exception: '+ e
 
 
 # -------------------returns a list containing all points in between the two specified coordinate pairs (lat-long) given the interval value-----------
@@ -30,8 +30,8 @@ def divide_by_interval(lat1, long1, lat2, long2, interval):
     try:
         lat1 = float(lat1); long1 = float(long1);  lat2 = float(lat2); long2 = float(long2);
         coordinate_list = []
-        azimuth = calculate_bearing(lat1, long1, lat2, long2)
-        d = calculate_distance(lat1, long1, lat2, long2)
+        azimuth = get_bearing(lat1, long1, lat2, long2)
+        d = get_distance(lat1, long1, lat2, long2)
         remainder, dist = modf((d / interval))
         counter = float(interval)
         coordinate_list.append([lat1, long1])
@@ -70,12 +70,16 @@ def get_point(lat, long, azimuth, distance):
     except Exception as e:
         return 'Exception: '+e
 
-# ----------Returns the coordinates of midpoint on the rhumb line joining the given endpoint coordinates (lat1,long1,lat2,long2)----------
+# ----------Returns the coordinates of midpoint on the great circle joining the given endpoint coordinates (lat1,long1,lat2,long2)----------
 def get_midpoint(lat1,long1,lat2,long2):
-    azimuth = calculate_bearing(lat1,long1,lat2,long2)
-    distance = calculate_distance(lat1,long1,lat2,long2) / 2
-    coords = get_point(lat1,long1,azimuth,distance)
-    return coords
+    try:
+        lat1 = float(lat1); long1 = float(long1); lat2 = float(lat2); long2 = float(long2)
+        azimuth = get_bearing(lat1,long1,lat2,long2)
+        distance = get_distance(lat1,long1,lat2,long2)/2
+        coords = get_point(lat1,long1,azimuth,distance)
+        return coords
+    except Exception as e:
+        return 'Exception:' + e
 
 #-----------------Useful conversions-----------------
 def convert_to_miles(distance):       #converts distance in kms to miles
