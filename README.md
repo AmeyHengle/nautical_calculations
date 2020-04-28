@@ -8,7 +8,14 @@
 >* Finding the coordinates of a point at a particular angle and distance from the given point.
 >* Finding the coordinates of midpoint on the great circle line joining any two points on the map.
 
+<<<<<<< HEAD
 > The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
+=======
+>The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
+
+
+<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
+>>>>>>> e090a0d2011b0fa66ab7f61906dd95e31eee4df4
 
 <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/>
 
