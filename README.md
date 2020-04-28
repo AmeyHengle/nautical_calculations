@@ -8,21 +8,16 @@
 >* Finding the coordinates of a point at a particular angle and distance from the given point.
 >* Finding the coordinates of midpoint on the great circle line joining any two points on the map.
 
->The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
+> The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
 
-<<<<<<< HEAD
-<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
-=======
-<img alt = 'example1' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/>       <img alt = 'example2' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/>       <img alt = 'example3' src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
->>>>>>> e7618dc58e93ecec3f59e36d7e14040df963347b
-
+<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/>
 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install nautical_calculations.
 
 ```bash
-pip install nautical_calculations
+pip install nautical-calculations
 ```
 
 ## Usage
@@ -100,10 +95,11 @@ convert_to_radians(angle)              #converts angle in degrees to radians
 ```python
 convert_to_degress(angle)              #converts angle in radians to degrees
 ```
-
 ## Sample code link
-https://github.com/AmeyHengle/nautical_calculations/blob/master/nautical_calculations/sample_code.py
+https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/sample_code.py
 
+## PyPI package link
+https://pypi.org/project/nautical-calculations/
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -111,10 +107,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## References
-<<<<<<< HEAD
-=======
 
->>>>>>> e7618dc58e93ecec3f59e36d7e14040df963347b
 1) http://mathforum.org/library/drmath/view/51879.html
 2) http://www.edwilliams.org/avform.htm#Intermediate
 3) http://mathforum.org/library/drmath/view/55417.html
@@ -122,6 +115,3 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-
