@@ -3,21 +3,14 @@
 >nautical-calculations is a Python library used for dealing with some basic Geospatial calculations on the geographic coordinate system. 
 
 >It is developed to act as an interface for performing calculations like the nautical distance (Great Circle distance), Rhumb line distance and bearing angle. It explores the possiblitity of using these basic terms in performing operations like:
-
 >* Finding all the coordinates which lie on the great circle line joining any two points on the map
 >* Finding the coordinates of a point at a particular angle and distance from the given point.
 >* Finding the coordinates of midpoint on the great circle line joining any two points on the map.
 
-<<<<<<< HEAD
 > The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
-=======
->The main idea is to save the time of defining your own functions to derive these terms, thus making the project development easier.
 
 
 <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/> 
->>>>>>> e090a0d2011b0fa66ab7f61906dd95e31eee4df4
-
-<img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/distance.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/number.png" width="300" height = "250"/> <img src = "https://github.com/AmeyHengle/nautical_calculations/blob/master/samples/midpoint.png" width="300" height = "250"/>
 
 ## Installation
 
